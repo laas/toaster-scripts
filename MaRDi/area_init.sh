@@ -11,7 +11,7 @@
 rosservice call /area_manager/add_area "myArea:
   id: 0
   name: 'Livingroom'
-  myOwner: 0
+  myOwner: ''
   areaType: 'room'
   factType: ''
   entityType: 'entities'
@@ -32,7 +32,7 @@ rosservice call /area_manager/add_area "myArea:
 rosservice call /area_manager/add_area "myArea:
   id: 0
   name: 'Kitchen'
-  myOwner: 0
+  myOwner: ''
   areaType: 'room'
   factType: ''
   entityType: 'entities'
@@ -52,7 +52,7 @@ rosservice call /area_manager/add_area "myArea:
 rosservice call /area_manager/add_area "myArea:
   id: 0
   name: 'Bedroom'
-  myOwner: 0
+  myOwner: ''
   areaType: 'room'
   factType: ''
   entityType: 'entities'
@@ -72,7 +72,7 @@ rosservice call /area_manager/add_area "myArea:
 rosservice call /area_manager/add_area "myArea:
   id: 0
   name: 'Livingroom_coffeetable'
-  myOwner: 0
+  myOwner: ''
   areaType: 'support'
   factType: ''
   entityType: 'entities'
@@ -87,7 +87,7 @@ rosservice call /area_manager/add_area "myArea:
 rosservice call /area_manager/add_area "myArea:
   id: 0
   name: 'Livingroom_table'
-  myOwner: 0
+  myOwner: ''
   areaType: 'support'
   factType: ''
   entityType: 'entities'
@@ -102,7 +102,7 @@ rosservice call /area_manager/add_area "myArea:
 rosservice call /area_manager/add_area "myArea:
   id: 0
   name: 'Kitchen_table'
-  myOwner: 0
+  myOwner: ''
   areaType: 'support'
   factType: ''
   entityType: 'entities'
@@ -117,7 +117,7 @@ rosservice call /area_manager/add_area "myArea:
 rosservice call /area_manager/add_area "myArea:
   id: 0
   name: 'interaction'
-  myOwner: 1
+  myOwner: 'pr2'
   areaType: ''
   factType: 'interaction'
   entityType: 'agents'
