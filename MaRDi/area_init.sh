@@ -20,11 +20,11 @@ rosservice call /area_manager/add_area "myArea:
   ray: 0.0
   poly:
     points:
-    - {x: 1.9, y: 9.0, z: 0.0}
-    - {x: 9.0, y: 9.0, z: 0.0}
-    - {x: 9.0, y: 5.0, z: 0.0}
-    - {x: 1.9, y: 5.0, z: 0.0}
-    - {x: 1.9, y: 9.0, z: 0.0}
+    - {x: 2.3, y: 9.0, z: 0.0}
+    - {x: 9.4, y: 9.0, z: 0.0}
+    - {x: 9.4, y: 5.0, z: 0.0}
+    - {x: 2.3, y: 5.0, z: 0.0}
+    - {x: 2.3, y: 9.0, z: 0.0}
   insideEntities: [0]" 
 
 
@@ -41,11 +41,11 @@ rosservice call /area_manager/add_area "myArea:
   ray: 0.0
   poly:
     points:
-    - {x: 6.0, y: 13.1, z: 0.0}
-    - {x: 9.0, y: 13.1, z: 0.0}
-    - {x: 9.0, y: 9.0, z: 0.0}
-    - {x: 6.0, y: 9.0, z: 0.0}
-    - {x: 6.0, y: 13.1, z: 0.0}
+    - {x: 6.4, y: 13.1, z: 0.0}
+    - {x: 9.4, y: 13.1, z: 0.0}
+    - {x: 9.4, y: 9.0, z: 0.0}
+    - {x: 6.4, y: 9.0, z: 0.0}
+    - {x: 6.4, y: 13.1, z: 0.0}
   insideEntities: [0]"
 
 
@@ -61,11 +61,11 @@ rosservice call /area_manager/add_area "myArea:
   ray: 0.0
   poly:
     points:
-    - {x: 6.0, y: 9.0, z: 0.0}
-    - {x: 6.0, y: 13.1, z: 0.0}
-    - {x: 1.9, y: 13.1, z: 0.0}
-    - {x: 1.9, y: 9.0, z: 0.0}
-    - {x: 6.0, y: 9.0, z: 0.0}
+    - {x: 6.4, y: 9.0, z: 0.0}
+    - {x: 6.4, y: 13.1, z: 0.0}
+    - {x: 2.4, y: 13.1, z: 0.0}
+    - {x: 2.4, y: 9.0, z: 0.0}
+    - {x: 6.4, y: 9.0, z: 0.0}
   insideEntities: [0]"
 
 
@@ -77,7 +77,7 @@ rosservice call /area_manager/add_area "myArea:
   factType: ''
   entityType: 'entities'
   isCircle: true
-  center: {x: 4.5, y: 7.3, z: 0.0}
+  center: {x: 4.9, y: 7.3, z: 0.0}
   ray: 2.0
   poly:
     points:
@@ -92,7 +92,7 @@ rosservice call /area_manager/add_area "myArea:
   factType: ''
   entityType: 'entities'
   isCircle: true
-  center: {x: 7.3, y: 6.8, z: 0.0}
+  center: {x: 7.7, y: 6.8, z: 0.0}
   ray: 2.0
   poly:
     points:
@@ -107,7 +107,7 @@ rosservice call /area_manager/add_area "myArea:
   factType: ''
   entityType: 'entities'
   isCircle: true
-  center: {x: 7.7, y: 9.8, z: 0.0}
+  center: {x: 8.1, y: 9.8, z: 0.0}
   ray: 2.0
   poly:
     points:
