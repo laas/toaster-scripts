@@ -1,9 +1,16 @@
 # Init for spencer project
 
 #pdg set-up
+
+# No spark (branch genom /mardi_dev2)
+rosservice call /pdg/manage_stream "{morseHuman: true, niutHuman: false, groupHuman: false, mocapHuman: false, pr2Robot: true,
+  spencerRobot: false, vimanObject: true, sparkObject: false, sparkFact: false}"
+
+# spark (branch genom / mardi_dev2)
 #rosservice call /pdg/manage_stream "{morseHuman: false, niutHuman: false, groupHuman: false, mocapHuman: true, pr2Robot: true,
 #  spencerRobot: false, vimanObject: true, sparkObject: true, sparkFact: true}"
 
+# no genom (branch master)
 #rosservice call /pdg/manage_stream "{morseHuman: false, niutHuman: false, groupHuman: false, mocapHuman: true, pr2Robot: true,
 #  spencerRobot: false}" 
 
@@ -128,4 +135,6 @@ rosservice call /area_manager/add_area "myArea:
     points:
     - {x: 0, y: 0, z: 0}
   insideEntities: [0]" 
+
+rosservice call /area_manager/publish_all_areas
 
