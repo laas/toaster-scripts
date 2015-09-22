@@ -126,14 +126,18 @@ rosservice call /area_manager/add_area "myArea:
   name: 'interaction'
   myOwner: 'pr2'
   areaType: ''
-  factType: 'interaction'
+  factType: 'pr2_interaction'
   entityType: 'agents'
-  isCircle: true
+  isCircle: false
   center: {x: 0.0, y: 0.0, z: 0.0}
   ray: 2.0
   poly:
     points:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: -1, z: 0}
+    - {x: 2, y: -2, z: 0}
+    - {x: 2, y: 2, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: 0, y: -1, z: 0}
   insideEntities: [0]" 
 
 rosservice call /area_manager/publish_all_areas
