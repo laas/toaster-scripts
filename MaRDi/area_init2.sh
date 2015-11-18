@@ -48,11 +48,11 @@ rosservice call /area_manager/add_area "myArea:
   ray: 0.0
   poly:
     points:
-    - {x: 6.4, y: 13.1, z: 0.0}
-    - {x: 9.4, y: 13.1, z: 0.0}
-    - {x: 9.4, y: 9.0, z: 0.0}
-    - {x: 6.4, y: 9.0, z: 0.0}
-    - {x: 6.4, y: 13.1, z: 0.0}
+    - {x: 0.0, y: 5.0, z: 0.0}
+    - {x: 0.0, y: 9.0, z: 0.0}
+    - {x: 2.3, y: 9.0, z: 0.0}
+    - {x: 2.3, y: 5.0, z: 0.0}
+    - {x: 0.0, y: 5.0, z: 0.0}
   insideEntities: [0]"
 
 
@@ -68,11 +68,11 @@ rosservice call /area_manager/add_area "myArea:
   ray: 0.0
   poly:
     points:
-    - {x: 6.4, y: 9.0, z: 0.0}
-    - {x: 6.4, y: 13.1, z: 0.0}
-    - {x: 2.4, y: 13.1, z: 0.0}
-    - {x: 2.4, y: 9.0, z: 0.0}
-    - {x: 6.4, y: 9.0, z: 0.0}
+    - {x: 0.0, y: 0.0, z: 0.0}
+    - {x: 0.0, y: 5.0, z: 0.0}
+    - {x: 9.4, y: 5.0, z: 0.0}
+    - {x: 9.4, y: 0.0, z: 0.0}
+    - {x: 0.0, y: 0.0, z: 0.0}
   insideEntities: [0]"
 
 
@@ -84,7 +84,7 @@ rosservice call /area_manager/add_area "myArea:
   factType: ''
   entityType: 'entities'
   isCircle: true
-  center: {x: 4.9, y: 7.3, z: 0.0}
+  center: {x: 3.84, y: 7.1, z: 0.0}
   ray: 2.0
   poly:
     points:
@@ -99,7 +99,7 @@ rosservice call /area_manager/add_area "myArea:
   factType: ''
   entityType: 'entities'
   isCircle: true
-  center: {x: 7.7, y: 6.8, z: 0.0}
+  center: {x: 7.5, y: 6.1, z: 0.0}
   ray: 2.0
   poly:
     points:
@@ -114,7 +114,37 @@ rosservice call /area_manager/add_area "myArea:
   factType: ''
   entityType: 'entities'
   isCircle: true
-  center: {x: 8.1, y: 9.8, z: 0.0}
+  center: {x: 1.8, y: 6.7, z: 0.0}
+  ray: 2.0
+  poly:
+    points:
+    - {x: 0.0, y: 0.0, z: 0.0}
+  insideEntities: [0]"
+
+rosservice call /area_manager/add_area "myArea:
+  id: 0
+  name: 'Bedroom_bedsidetable'
+  myOwner: ''
+  areaType: 'support'
+  factType: ''
+  entityType: 'entities'
+  isCircle: true
+  center: {x: 3.6, y: 1.8, z: 0.0}
+  ray: 2.0
+  poly:
+    points:
+    - {x: 0.0, y: 0.0, z: 0.0}
+  insideEntities: [0]"
+
+rosservice call /area_manager/add_area "myArea:
+  id: 0
+  name: 'Bedroom_shelf'
+  myOwner: ''
+  areaType: 'support'
+  factType: ''
+  entityType: 'entities'
+  isCircle: true
+  center: {x: 3.0, y: 4.7, z: 0.0}
   ray: 2.0
   poly:
     points:
