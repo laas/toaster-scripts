@@ -85,7 +85,7 @@ rosservice call /area_manager/add_area "myArea:
   entityType: 'entities'
   isCircle: true
   center: {x: 3.84, y: 7.1, z: 0.0}
-  ray: 2.0
+  ray: 1.3
   poly:
     points:
     - {x: 0.0, y: 0.0, z: 0.0}
@@ -100,7 +100,7 @@ rosservice call /area_manager/add_area "myArea:
   entityType: 'entities'
   isCircle: true
   center: {x: 7.5, y: 6.1, z: 0.0}
-  ray: 2.0
+  ray: 1.5
   poly:
     points:
     - {x: 0.0, y: 0.0, z: 0.0}
@@ -114,8 +114,8 @@ rosservice call /area_manager/add_area "myArea:
   factType: ''
   entityType: 'entities'
   isCircle: true
-  center: {x: 1.8, y: 6.7, z: 0.0}
-  ray: 2.0
+  center: {x: 1.5, y: 6.8, z: 0.0}
+  ray: 1.0
   poly:
     points:
     - {x: 0.0, y: 0.0, z: 0.0}
@@ -130,7 +130,7 @@ rosservice call /area_manager/add_area "myArea:
   entityType: 'entities'
   isCircle: true
   center: {x: 3.6, y: 1.8, z: 0.0}
-  ray: 2.0
+  ray: 1.0
   poly:
     points:
     - {x: 0.0, y: 0.0, z: 0.0}
@@ -145,7 +145,7 @@ rosservice call /area_manager/add_area "myArea:
   entityType: 'entities'
   isCircle: true
   center: {x: 3.0, y: 4.7, z: 0.0}
-  ray: 2.0
+  ray: 1.0
   poly:
     points:
     - {x: 0.0, y: 0.0, z: 0.0}
@@ -154,7 +154,7 @@ rosservice call /area_manager/add_area "myArea:
 rosservice call /area_manager/add_area "myArea:
   id: 0
   name: 'interaction'
-  myOwner: 'pr2'
+  myOwner: 'PR2_ROBOT'
   areaType: ''
   factType: 'pr2_interaction'
   entityType: 'agents'
@@ -170,5 +170,5 @@ rosservice call /area_manager/add_area "myArea:
     - {x: 0, y: -1, z: 0}
   insideEntities: [0]" 
 
-rosservice call /area_manager/publish_all_areas
+#rosservice call /area_manager/publish_all_areas
 
