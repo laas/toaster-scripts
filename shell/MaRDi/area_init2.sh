@@ -7,7 +7,7 @@
 #  spencerRobot: false, vimanObject: true, sparkObject: false, sparkFact: false}"
 
 # spark (branch genom / mardi_dev2)
-rosservice call /pdg/manage_stream "{morseHuman: false, niutHuman: false, groupHuman: false, mocapHuman: true, pr2Robot: true,
+rosservice call /pdg/manage_stream "{morseHuman: false, niutHuman: false, groupHuman: false, mocapHuman: false, pr2Robot: true,
   spencerRobot: false, vimanObject: true, sparkObject: true, sparkFact: true}"
 
 # no genom (branch master)
@@ -156,7 +156,7 @@ rosservice call /area_manager/add_area "myArea:
   name: 'interaction'
   myOwner: 'PR2_ROBOT'
   areaType: ''
-  factType: 'pr2_interaction'
+  factType: 'interaction'
   entityType: 'agents'
   isCircle: false
   center: {x: 0.0, y: 0.0, z: 0.0}
@@ -170,5 +170,5 @@ rosservice call /area_manager/add_area "myArea:
     - {x: 0, y: -1, z: 0}
   insideEntities: [0]" 
 
-#rosservice call /area_manager/publish_all_areas
+rosservice call /area_manager/publish_all_areas
 
