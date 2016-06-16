@@ -2,7 +2,9 @@
 
 import sys
 import rospy
+import tf
 from toaster_msgs.srv import *
+from geometry_msgs.msg import Pose
 
 def set_pose_client(id,name,type,owner,x,y,z,roll,pitch,yaw):
   try:
@@ -10,7 +12,21 @@ def set_pose_client(id,name,type,owner,x,y,z,roll,pitch,yaw):
     res=add_entity(id, name, type, owner)
 
     set_entity_pose=rospy.ServiceProxy("/toaster_simu/set_entity_pose",SetEntityPose)
-    res=set_entity_pose(id, owner,type,x,y,z,roll,pitch,yaw)
+
+
+    pose=Pose()
+    pose.position.x=x
+    pose.position.y=y
+    pose.position.z=z
+
+    quaternion = tf.transformations.quaternion_from_euler(roll, pitch, yaw)
+
+    pose.orientation.x = quaternion[0]
+    pose.orientation.y = quaternion[1]
+    pose.orientation.z = quaternion[2]
+    pose.orientation.w = quaternion[3]
+
+    res=set_entity_pose(id, owner,type,pose)
 
     
   
